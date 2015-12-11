@@ -15,7 +15,16 @@
       >
 
     <!-- TODO add main launcher activity -->
-
+      <activity
+          android:name=".ui.LoginActivity"
+          android:label="@string/alert_dialog_title"
+          android:theme="@style/AppTheme">
+      <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+          >
+      </activity>
     <activity
         android:name=".ui.EmailListActivity"
         android:label="@string/title_email_list"

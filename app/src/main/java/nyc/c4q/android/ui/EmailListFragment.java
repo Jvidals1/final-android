@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
+import nyc.c4q.android.R;
 import nyc.c4q.android.model.Email;
 import nyc.c4q.android.rest.EmailService;
 
@@ -42,9 +44,11 @@ public class EmailListFragment extends Fragment {
   @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
     // TODO - Inflate view
-    View view = null;
+    View view = inflater.inflate(R.layout.fragment_email_list, container, false);
+
 
     // TODO - get emails from service and set up list adapter
+
 
     // TODO - Bind adapter to ListView
 
